@@ -1,0 +1,8 @@
+1262754000000
+Today I decided against my original idea of making a D&D 3.5 Character generator. It sounded like a good idea at the time, but thinking about on it, there would just be too much work. Most of it would be copying stuff from the Player's Handbook instead of actual programming.
+
+I had a new idea- an electronic journal. It'll save entries in text files, sort the entries, and use arrays, so sounds like something good as a summative.
+
+So today I more or less threw out all of my skecthes and UML diagrams of the D&D character generator and started sketching what I wanted the journal to look like.
+
+At home today I finished making UMl diagrams for the journal. Once I get it approved I can start programming tomorrow.

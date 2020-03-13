@@ -1,0 +1,10 @@
+1262840400000
+First thing I did today was to give me project proposal to Ms.Cianci. I got it approved, so i started programming.
+
+The first thing I did was create all of my classes, put in the import statements I would need, and I began to program my GUI, intitializing and placing my buttons, text fields, and labels.
+
+One thing that I ran into was trying to place a JPanel in a JScrollPane. It doesn't seem to want to scroll.
+
+When i got home today I researched how to put Jpanels into a JScrollPane. It turned out that with a null layout, a JPanel returns a preferredSize of 0,0. That meant the JScrollpane was being told that the Jpanel's size was nothing, and thus it didn't have to scroll to acomadate it. I simply added the line viewEntriesPanel.setPreferredSize(viewEntriesPanel.getSize()); and everything fixed itself.
+
+I spent two hours trying to make this work, but I didn't realize that I had my JScrollPane's layout to null, because I was testing earlier if I could simply use the JScrollpane itself like a JPanel. the null layout simply made it so that the JPanel didn't appear.

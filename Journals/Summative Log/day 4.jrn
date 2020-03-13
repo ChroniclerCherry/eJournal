@@ -1,0 +1,8 @@
+1263013200000
+I worked mainly on the JournalEntry class today. I created more or less everything I'll need to use from now on.
+
+A new method came to me today that i didn't think of before. I made it so that setTitle would not only change the title for the object, but change the file name as well. This is in anticipation of something I hadn't thought of before: editing entries.
+
+The rest of the day was spent on making the JTable in my MainFrame display information based on the files in a folder with the name of the journal.
+
+I didn't work on it nearly as much as I had wanted too, mainly because I had an essay to write for another summative.

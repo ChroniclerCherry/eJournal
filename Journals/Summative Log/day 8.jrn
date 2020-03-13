@@ -1,0 +1,10 @@
+1263396368812
+Ms. Cianci helped me figure out the refresh button. I could use the word "this" to pass the frame itself! Problem solved!
+
+I started putting confirmation messages around my application for when people save, delete, edit, and exit a page without saving. The problem right now is that it goes ahead with the action even if the user clicked 'No'.
+
+Woops, I had a semicolon at the end of my if statement....
+
+Time to comment, away!!
+
+Actually, no, gonna work on that tomorrow. Have another summative to do.

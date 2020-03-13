@@ -1,0 +1,23 @@
+1263348405031
+Today I created the GUI for ViewEntryFrame, EditEntryFrame, and NewEntryFrame. I got the three of them to work, which wasn't too hard. Viewing an entry was giving me a hard time with multiple lines until I realized my JournalEntry class was only reading the first line for the date and the second line for the entry.
+
+Something I spent a long time on and managed to get work was a search feature. I'm not entirely sure how I got it to work, but it was really cool. Since it was case sensitive, I decided to force the names of all entries to lowercase, and read the contents of the search field as lower case. I'm not sure why, but it won't search my Date column, only the Title one.
+
+After I tweaked around with things so that loading, saving, deleting, and editing files went smoothly, I realized that there was a problem with my list displaying the journal entries - it didn't refresh when there was a change.
+
+My first challenge was to create a refresh method. I tried validate() and repaint() but it didn't seem to work. I also tried rereading the files, restoring them into my journalentries array, and adding them again to the Jtable, but it was very glitchy and prone to jumping back to pre-refreshed state randomly.
+
+So I decided to do what I kinda of wanted to avoid, and made my refresh method a simple
+
+new MainFrame(journalName);
+dispose();
+
+It works I guess.
+
+Then I realized another problem - how was I going to be able to refresh when something is deleted, created, or edited when they are done on diffeent Frames? Even as a public method, I can't access refresh(); from the other frams because I'm not sure how to pass along an instance of my MainFrame to them.
+
+I ended up adding a refresh button to the page, but I am not really happy with making the use rmanually refresh the page. If they don't refresh and interact with files that had changed, then problems will probably occur. Especially with deleted files and files that had changed names.
+
+I also found that clicking the same button in my jtable twice was glitchy, so I moved a portion of the code in the Buttoneditor class around so that the part handling the clicked event was in the same place as I found it when I first c&p'd the code.
+
+Goal for tomorrow: Add Tooltips to the header of the JTable as to be more informative and see if I can figure out how to make refresh work

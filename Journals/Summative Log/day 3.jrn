@@ -1,0 +1,12 @@
+1262926800000
+I found something called a JTable today, which displayed information in a table. It sounds like a really good idea, and would organize the Journal entries much better than using a Jpanel would.
+
+So I spent a good chunk of time looking them up and trying to decide how to use them. I managed to make it work, but I could not add JButtons to them- the JTable would display the button's toString.
+
+I spent a long time looking this up at home today. I found some code that placed buttons in one of the columns. The problem is that they don't let me put buttons in the JTable - it lets me give it the text to put on a JButton and it'll create the buttons for me.
+
+It looks like it's one of the two classes that reacts to when the button is clicked, so I was going to work on that, except my USB crashed. Most of the files on it became corrupt and unuseable.
+
+I found the code for an earlier version of my MainFrame class in a Openoffice document completely unrelated to my project- I can only assume that my glitchy USB placed it there.
+
+I worked on recreating most of my classes. I did most of my work on the GUI and basic logic of my Main Frame and JournalEntry classes.

@@ -1,0 +1,10 @@
+1263481168828
+I, uh, decided to work on my program a bit more yesterday night.
+
+I never really liked the idea of logging in, since the passwords and usernames are stored in a plain text file. I could code & decode it, but if anyone has my source code that's useless as well.
+
+So I spent about twenty minutes replacing logging in with a drop down list of available journals instead.
+
+I'm going to go clean up my code and do some commenting now.
+
+I added a chunk of code to the Edit Entry and New Entry frames so that if the user sets the title to another netry that already exists, the program will let them know and ask if they want to override the preexisting entry.

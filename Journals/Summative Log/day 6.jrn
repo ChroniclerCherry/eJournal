@@ -1,0 +1,14 @@
+1263186000000
+Did a lot today, especially since I had time during class, as well as a 4th period spare, and I coded nonstop at home, stopping only for Dinner and a Scouts meeting.
+
+I added the classes i found earlier that displayed the buttons in my JTable, and I added a sorter to the jtable so that it will sort itself when the user clicks on a column header.
+
+I also disabled editing in the table cells, to make sure the users couldn't change the information displayed. By default all cells are editable like a spreadsheet.
+
+Problem I encountered was the date column. When it sorts, the table sorts it as a String, not a date, which is problematic since alphabetical order doesn't mean much when we're talking about dates. I spent several hours trying to find code that I could understand which would let me sort that column by date. I got tired though, and got lazy. So I decided to format the date as yyy/mm/dd instead so that even sorted as a String it would be in chronological order.
+
+I spent an hour or so on the Login and New Journal pages until they worked more or less.
+
+I started working on the problem of dealing with the displayed Buttons on my table. I tried to keep a track of which button was clicked by saving the row number and referencing that with my array of Journal Entriesm then i would pass the right Journal entry along to the ViewEntryFrame. I quickly realized that would not work once the table was sorted out of the order of the array.
+
+I decide to take another approach. I made it so that when the button is clicked, I take whatever is in the first column in the same row as the button that was clicked. That would be the title of the Journal entry, so I could use that filename to create a new journal entry and pass it along to the ViewNewEntry frame.
